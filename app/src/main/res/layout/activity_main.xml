@@ -15,12 +15,12 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/Yellow">
+            android:background="@color/Yellow"
+            android:layout_marginRight="15dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
                 android:gravity="center"
                 android:padding="4dp"
@@ -36,13 +36,13 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVCategories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idRVCategories"
-        android:orientation="horizontal"
-        tools:listitem="@layout/categories_rv_items"
         android:layout_below="@id/idToolbar"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/categories_rv_items" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVNews"
